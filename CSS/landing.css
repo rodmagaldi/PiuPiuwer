@@ -1,0 +1,167 @@
+footer {
+    background-color: #f5f5f5;
+    border-top: 0.1ch solid #e6e6e6;
+    padding: 0.7em;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-indent: 1em;
+}
+
+.upper-side {
+    flex: 1;    
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    
+}
+
+.left-side,
+.right-side {
+    flex: 1;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    background-color: #1da1f2;
+    background-image: linear-gradient(150deg, transparent, transparent 13px, #1b95e0 15px, transparent 13px, transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
+}
+
+#title {
+    margin-top: 8.5em;
+    margin-bottom: 3.25em;
+    text-align: center;
+    font-size: 2em;
+    color: #FFF;
+}
+
+.functionality {
+    font-weight: bold;
+    font-size: 120%;
+    color: #FFF;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#functionalities {
+    margin-bottom: 3em;
+    line-height: 4ch;
+}
+
+#func-1,
+#func-2,
+#func-3 {
+    display: flex;
+    margin-left: 3em;
+    margin-bottom: 2em;
+    margin-right: 2em;
+    transition: 0.35s;
+}
+
+
+#func-1:hover,
+#func-2:hover,
+#func-3:hover {
+    transform: scale(1.1);
+}
+
+#func-1 p,
+#func-2 p {
+    text-indent: 1.85em;
+}
+
+#func-1 img,
+#func-2 img {
+    position: relative;
+    top: 0.7em;
+    left: 0.7em;
+}
+
+#func-3 img {
+    position: relative;
+    bottom: 0.5em;
+    right: 0.5em;
+}
+
+.right-side {
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+}
+
+.right-side-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.twitter-infos {
+    margin-bottom: 3em;
+    margin-top: 1em;
+}
+
+.slogan {
+    font-size: 1.25ch;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.div-entrar {
+    margin-top: 0.7em;
+    margin-bottom: 0.9em;
+}
+
+.entrar {
+    background-color: #1da1f2;
+    border-radius: 1em;
+    border: none;
+    color: #FFF;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.15s;
+}
+
+.entrar:hover {
+    background-color: #156597;
+}
+
+.div-sign-up {
+    margin-top: 0.9em;
+    margin-bottom: 0.7em;
+}
+
+.sign-up {
+    background-color: #1da1f2;
+    border-radius: 1em;
+    border: none;
+    color: #FFF;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.15s;
+}
+
+.sign-up:hover {
+    background-color: #156597;
+}
+
+.fill-height {
+    display: flex;
+    flex-direction: column;
+}

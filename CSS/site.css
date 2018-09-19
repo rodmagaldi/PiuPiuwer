@@ -1,0 +1,24 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+input {
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+h1 {
+    font-size: 1.5ch;
+    font-weight: bold;
+    color: #14171a;
+}
+
+footer {
+    font-size: 0.8ch;
+}
+
+
+
