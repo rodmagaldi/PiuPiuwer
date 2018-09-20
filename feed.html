@@ -1,161 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
-    <title>Feed | PiuPiuwer</title>
-    <link rel="icon" href="images/favicon.png">
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/site.css">
-    <link rel="stylesheet" href="CSS/feed.css">
-</head>
-<body>
-    <nav class="top-nav-bar">
-        <button class="feed" onclick="location.href='feed.html'" type="button">Feed</button>
-        <img class="top-bar-bird-img" src="images/bird.png" alt="PiuPiuwer" height=35px width=35px>
-        <input class="search-bar" type="text" placeholder="Buscar...">
-        <img class="top-bar-mag-lens" src="images/mag-lens-image.png" alt="Buscar" height=20px width=20px>
-        <img class="top-bar-profile-img" src="images/profile-picture.jpg" alt="Perfil" height=34px width=34px>
-        <button class="new-piu" type="button">Piar!</button>
-    </nav>
-    <main class="main-content">
-        <div class="content">
-            <div class="profile-info">
-                <div class="header-image">
-                    <img src="images/header-image.png" alt="Header Image">
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+        <title>Feed | PiuPiuwer</title>
+        <link rel="icon" href="images/favicon.png">
+        <link rel="stylesheet" href="CSS/reset.css">
+        <link rel="stylesheet" href="CSS/site.css">
+        <link rel="stylesheet" href="CSS/feed.css">
+    </head>
+    <body>
+        <nav class="top-nav-bar">
+            <button class="feed" onclick="location.href='feed.html'" type="button">Feed</button>
+            <img class="top-bar-bird-img" src="images/bird.png" alt="PiuPiuwer" height=35px width=35px>
+            <input class="search-bar" type="text" placeholder="Buscar...">
+            <img class="top-bar-mag-lens" src="images/mag-lens-image.png" alt="Buscar" height=20px width=20px>
+            <img class="top-bar-profile-img" src="images/profile-picture.jpg" alt="Perfil" height=34px width=34px>
+            <button class="new-piu" type="button">Piar!</button>
+        </nav>
+        <main class="main-content">
+            <div class="content">
+                <div class="profile-info">
+                    <div class="header-image">
+                        <img src="images/header-image.png" alt="Header Image">
+                    </div>
+                    <div class="image-and-name">
+                        <img src="images/profile-picture.jpg" alt="Perfil" height="80px" width="80px">
+                        <h1>[usuário]</h1>
+                        <p><span>@</span>[username]</p>
+                    </div>
+                    <div class="add-info">
+                        <button class="my-tweets" onclick="location.href='profile.html'" type="button">Pius</button>
+                        <button class="following" onclick="location.href='#'" type="button">Seguindo</button>
+                        <button class="followers" onclick="location.href='#'" type="button">Seguidores</button>
+                    </div>
                 </div>
-                <div class="image-and-name">
-                    <img src="images/profile-picture.jpg" alt="Perfil" height="80px" width="80px">
-                    <h1>[usuário]</h1>
-                    <p><span>@</span>[username]</p>
+                <div class="piu-box">
+                    <div class="pius">
+                        <img class="piu-profile-img" src="images/profile-picture.jpg" alt="Perfil" height=34px width=34px>
+                        <input class="piu-bar" name="piu-bar" type="text" placeholder="Diga o que está piando...">
+                        <p class="text-count">0</p>
+                        <p id="max-text-count">/140</p>
+                        <button class="novo-piu" type="button">Novo piu!</button>
+                    </div>
+                    <div class="piu-1">
+                        <div class="tweet-image">
+                            <img src="images/profile-picture.jpg" alt="Perfil" height=60px width=60px>
+                        </div>
+                        <div class="tweet-de-facto">
+                            <ul class="user-info">
+                                <li><h2>[usuário]</h2></li>
+                                <li><p class="tweet-username"><span>@</span>[username]</p></li>
+                            </ul>
+                            <p class="tweet-message">Este é o primeiro piu mostrado, ou seja, o último piu proferido. Pode conter uma frase, uma foto, talvez até a localização de quem piou.</p>
+                            <ul class="action-icons">
+                                <li><p class="comment">Comentar</p></li>
+                                <li><p class="retweet">Repiar</p></li>
+                                <li><p class="like">Gostar</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="piu-2">
+                        <div class="tweet-image">
+                            <img src="images/profile-picture.jpg" alt="Perfil" height=60px width=60px>
+                        </div>
+                        <div class="tweet-de-facto">
+                            <ul class="user-info">
+                                <li><h2>[usuário]</h2></li>
+                                <li><p class="tweet-username"><span>@</span>[username]</p></li>
+                            </ul>
+                            <p class="tweet-message">Este é o segundo piu mostrado, ou seja, o penúltimo piu proferido. Pode conter uma frase, uma foto, talvez até a localização de quem piou.</p>
+                            <ul class="action-icons">
+                                <li><p class="comment">Comentar</p></li>
+                                <li><p class="retweet">Repiar</p></li>
+                                <li><p class="like">Gostar</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="piu-3">
+                        <div class="tweet-image">
+                            <img src="images/profile-picture.jpg" alt="Perfil" height=60px width=60px>
+                        </div>
+                        <div class="tweet-de-facto">
+                            <ul class="user-info">
+                                <li><h2>[usuário]</h2></li>
+                                <li><p class="tweet-username"><span>@</span>[username]</p></li>
+                            </ul>
+                            <p class="tweet-message">Este é o terceiro piu mostrado, ou seja, o antepenúltimo piu proferido. Pode conter uma frase, uma foto, talvez até a localização de quem piou.</p>
+                            <ul class="action-icons">
+                                <li><p class="comment">Comentar</p></li>
+                                <li><p class="retweet">Repiar</p></li>
+                                <li><p class="like">Gostar</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="piu-4">
+                        <div class="tweet-image">
+                            <img src="images/profile-picture.jpg" alt="Perfil" height=60px width=60px>
+                        </div>
+                        <div class="tweet-de-facto">
+                            <ul class="user-info">
+                                <li><h2>[usuário]</h2></li>
+                                <li><p class="tweet-username"><span>@</span>[username]</p></li>
+                            </ul>
+                            <p class="tweet-message">Este é o quarto piu mostrado. Pode conter uma frase, uma foto, talvez até a localização de quem piou.</p>
+                            <ul class="action-icons">
+                                <li><p class="comment">Comentar</p></li>
+                                <li><p class="retweet">Repiar</p></li>
+                                <li><p class="like">Gostar</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="piu-5">
+                        <div class="tweet-image">
+                            <img src="images/profile-picture.jpg" alt="Perfil" height=60px width=60px>
+                        </div>
+                        <div class="tweet-de-facto">
+                            <ul class="user-info">
+                                <li><h2>[usuário]</h2></li>
+                                <li><p class="tweet-username"><span>@</span>[username]</p></li>
+                            </ul>
+                            <p class="tweet-message">Este é o quinto piu mostrado. Pode conter uma frase, uma foto, talvez até a localização de quem piou.</p>
+                            <ul class="action-icons">
+                                <li><p class="comment">Comentar</p></li>
+                                <li><p class="retweet">Repiar</p></li>
+                                <li><p class="like">Gostar</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="piu-6">
+                        <div class="tweet-image">
+                            <img src="images/profile-picture.jpg" alt="Perfil" height=60px width=60px>
+                        </div>
+                        <div class="tweet-de-facto">
+                            <ul class="user-info">
+                                <li><h2>[usuário]</h2></li>
+                                <li><p class="tweet-username"><span>@</span>[username]</p></li>
+                            </ul>
+                            <p class="tweet-message">Este é o sexto piu mostrado. Pode conter uma frase, uma foto, talvez até a localização de quem piou.</p>
+                            <ul class="action-icons">
+                                <li><p class="comment">Comentar</p></li>
+                                <li><p class="retweet">Repiar</p></li>
+                                <li><p class="like">Gostar</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="end-of-tweets">
+                        <img src="images/bird.png" alt="PiuPiuwer" width="40px" height="40px">
+                    </div>
                 </div>
-                <div class="add-info">
-                    <button class="my-tweets" onclick="location.href='profile.html'" type="button">Pius</button>
-                    <button class="following" onclick="location.href='#'" type="button">Seguindo</button>
-                    <button class="followers" onclick="location.href='#'" type="button">Seguidores</button>
+                <div class="side-bar">
+                    <h2>Outra seção</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
-            <div class="piu-box">
-                <div class="pius">
-                    <img class="piu-profile-img" src="images/profile-picture.jpg" alt="Perfil" height=34px width=34px>
-                    <input class="piu-bar" type="text" placeholder="Diga o que está piando...">
-                    <button class="novo-piu" type="button">Novo piu!</button>
-                </div>
-                <div class="piu-1">
-                    <div class="tweet-image">
-                        <img src="images/profile-picture.jpg" alt="Perfil" height=60px width=60px>
-                    </div>
-                    <div class="tweet-de-facto">
-                        <ul class="user-info">
-                            <li><h2>[usuário]</h2></li>
-                            <li><p class="tweet-username"><span>@</span>[username]</p></li>
-                        </ul>
-                        <p class="tweet-message">Este é o primeiro piu mostrado, ou seja, o último piu proferido. Pode conter uma frase, uma foto, talvez até a localização de quem piou.</p>
-                        <ul class="action-icons">
-                            <li><p class="comment">Comentar</p></li>
-                            <li><p class="retweet">Repiar</p></li>
-                            <li><p class="like">Gostar</p></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="piu-2">
-                    <div class="tweet-image">
-                        <img src="images/profile-picture.jpg" alt="Perfil" height=60px width=60px>
-                    </div>
-                    <div class="tweet-de-facto">
-                        <ul class="user-info">
-                            <li><h2>[usuário]</h2></li>
-                            <li><p class="tweet-username"><span>@</span>[username]</p></li>
-                        </ul>
-                        <p class="tweet-message">Este é o segundo piu mostrado, ou seja, o penúltimo piu proferido. Pode conter uma frase, uma foto, talvez até a localização de quem piou.</p>
-                        <ul class="action-icons">
-                            <li><p class="comment">Comentar</p></li>
-                            <li><p class="retweet">Repiar</p></li>
-                            <li><p class="like">Gostar</p></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="piu-3">
-                    <div class="tweet-image">
-                        <img src="images/profile-picture.jpg" alt="Perfil" height=60px width=60px>
-                    </div>
-                    <div class="tweet-de-facto">
-                        <ul class="user-info">
-                            <li><h2>[usuário]</h2></li>
-                            <li><p class="tweet-username"><span>@</span>[username]</p></li>
-                        </ul>
-                        <p class="tweet-message">Este é o terceiro piu mostrado, ou seja, o antepenúltimo piu proferido. Pode conter uma frase, uma foto, talvez até a localização de quem piou.</p>
-                        <ul class="action-icons">
-                            <li><p class="comment">Comentar</p></li>
-                            <li><p class="retweet">Repiar</p></li>
-                            <li><p class="like">Gostar</p></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="piu-4">
-                    <div class="tweet-image">
-                        <img src="images/profile-picture.jpg" alt="Perfil" height=60px width=60px>
-                    </div>
-                    <div class="tweet-de-facto">
-                        <ul class="user-info">
-                            <li><h2>[usuário]</h2></li>
-                            <li><p class="tweet-username"><span>@</span>[username]</p></li>
-                        </ul>
-                        <p class="tweet-message">Este é o quarto piu mostrado. Pode conter uma frase, uma foto, talvez até a localização de quem piou.</p>
-                        <ul class="action-icons">
-                            <li><p class="comment">Comentar</p></li>
-                            <li><p class="retweet">Repiar</p></li>
-                            <li><p class="like">Gostar</p></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="piu-5">
-                    <div class="tweet-image">
-                        <img src="images/profile-picture.jpg" alt="Perfil" height=60px width=60px>
-                    </div>
-                    <div class="tweet-de-facto">
-                        <ul class="user-info">
-                            <li><h2>[usuário]</h2></li>
-                            <li><p class="tweet-username"><span>@</span>[username]</p></li>
-                        </ul>
-                        <p class="tweet-message">Este é o quinto piu mostrado. Pode conter uma frase, uma foto, talvez até a localização de quem piou.</p>
-                        <ul class="action-icons">
-                            <li><p class="comment">Comentar</p></li>
-                            <li><p class="retweet">Repiar</p></li>
-                            <li><p class="like">Gostar</p></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="piu-6">
-                    <div class="tweet-image">
-                        <img src="images/profile-picture.jpg" alt="Perfil" height=60px width=60px>
-                    </div>
-                    <div class="tweet-de-facto">
-                        <ul class="user-info">
-                            <li><h2>[usuário]</h2></li>
-                            <li><p class="tweet-username"><span>@</span>[username]</p></li>
-                        </ul>
-                        <p class="tweet-message">Este é o sexto piu mostrado. Pode conter uma frase, uma foto, talvez até a localização de quem piou.</p>
-                        <ul class="action-icons">
-                            <li><p class="comment">Comentar</p></li>
-                            <li><p class="retweet">Repiar</p></li>
-                            <li><p class="like">Gostar</p></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="end-of-tweets">
-                    <img src="images/bird.png" alt="PiuPiuwer" width="40px" height="40px">
-                </div>
-            </div>
-            <div class="side-bar">
-                <h2>Outra seção</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </div>
-    </main>
-</body>
+        </main>
+
+        <script src="js/validate-tweet.js"></script>
+        <script src="js/get-tweets.js"></script>
+
+    </body>
 </html>

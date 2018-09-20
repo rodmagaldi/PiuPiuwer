@@ -361,3 +361,26 @@ span {
     font-weight: bold;
     padding-bottom: 0.5em;
 }
+
+.erro-tweet {
+    color: red;
+}
+
+.text-count,
+#max-text-count {
+    font-size: 0.5em;
+}
+
+.text-count {
+    margin-left: 2px;
+    color: #1da1f2;
+}
+
+#max-text-count {
+    margin-right: 2px;
+    color: #657786;
+}
+
+.text-count-error {
+    color: red;
+}
