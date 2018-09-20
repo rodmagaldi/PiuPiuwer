@@ -7,7 +7,6 @@ xhr.addEventListener("load", function(){
     if (xhr.status == 200){
         var resposta = xhr.responseText;
         var tweets = JSON.parse(resposta);
-        console.log(tweets);
         tweets.forEach(function(tweet){
             console.log(tweet);
         })

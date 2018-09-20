@@ -18,4 +18,18 @@ function characterValidation(){
         campo.classList.remove("erro-tweet");
         count.classList.remove("text-count-error");
     }
+
+    return len;
 }
+
+botao.addEventListener("click", function(event){
+    event.preventDefault();
+    if (characterValidation() <= 140 && characterValidation() > 0){
+        
+        // so pra avisar que esta funcionando
+        alert("Deu bom!");
+
+        //chamar funcao que coloca o tweet na lista de tweets
+        //e colocar aqui
+    }
+});
