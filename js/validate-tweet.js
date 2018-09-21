@@ -31,5 +31,6 @@ botao.addEventListener("click", function(event){
 
         //chamar funcao que coloca o tweet na lista de tweets
         //e colocar aqui
+        insertTweet(campo.value);
     }
 });

@@ -227,24 +227,14 @@ span {
     border-bottom: 2px solid #E6ECF0;
 }
 
-.piu-1,
-.piu-2,
-.piu-3,
-.piu-4,
-.piu-5,
-.piu-6 {
+.piu-piu {
     display: flex;
     justify-content: space-evenly;
     padding-left: 1em;
     padding-right: 1em;
 }
 
-.piu-1:hover,
-.piu-2:hover,
-.piu-3:hover,
-.piu-4:hover,
-.piu-5:hover,
-.piu-6:hover {
+.piu-piu:hover {
     background-color: #F5F8FA;
 }
 
