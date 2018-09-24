@@ -27,7 +27,7 @@
                     </div>
                     <div class="image-and-name">
                         <img src="images/profile-picture.jpg" alt="Perfil" height="80px" width="80px">
-                        <h1>[usuário]</h1>
+                        <h1 class="usuario">[usuário]</h1>
                         <p><span>@</span>[username]</p>
                     </div>
                     <div class="add-info">
@@ -38,15 +38,20 @@
                 </div>
                 <div class="piu-box">
                     <div class="pius">
-                        <img class="piu-profile-img" src="images/profile-picture.jpg" alt="Perfil" height=34px width=34px>
-                        <input class="piu-bar" name="piu-bar" type="text" placeholder="Diga o que está piando...">
-                        <p class="text-count">0</p>
-                        <p id="max-text-count">/140</p>
-                        <button class="novo-piu" type="button">Novo piu!</button>
+                        <div class="piar-piu">
+                            <img class="piu-profile-img" src="images/profile-picture.jpg" alt="Perfil" height=34px width=34px>
+                            <input class="piu-bar" name="piu-bar" type="text" placeholder="Diga o que está piando...">
+                            <p class="text-count">0</p>
+                            <p id="max-text-count">/140</p>
+                            <button class="novo-piu" type="button">Novo piu!</button>
+                        </div>
+                        <div class="div-erro">
+                            <p id="mensagem-erro"></p>
+                        </div>
                     </div>
                     <div class="piu-piu">
                         <div class="tweet-image">
-                            <img src="images/profile-picture.jpg" alt="Perfil" height=60px width=60px>
+                            <img class="actual-tweet-image" src="images/profile-picture.jpg" alt="Perfil">
                         </div>
                         <div class="tweet-de-facto">
                             <ul class="user-info">
@@ -63,7 +68,7 @@
                     </div>
                     <div class="piu-piu">
                         <div class="tweet-image">
-                            <img src="images/profile-picture.jpg" alt="Perfil" height=60px width=60px>
+                            <img class="actual-tweet-image" src="images/profile-picture.jpg" alt="Perfil">
                         </div>
                         <div class="tweet-de-facto">
                             <ul class="user-info">
@@ -80,7 +85,7 @@
                     </div>
                     <div class="piu-piu">
                         <div class="tweet-image">
-                            <img src="images/profile-picture.jpg" alt="Perfil" height=60px width=60px>
+                            <img class="actual-tweet-image" src="images/profile-picture.jpg" alt="Perfil">
                         </div>
                         <div class="tweet-de-facto">
                             <ul class="user-info">
@@ -97,7 +102,7 @@
                     </div>
                     <div class="piu-piu">
                         <div class="tweet-image">
-                            <img src="images/profile-picture.jpg" alt="Perfil" height=60px width=60px>
+                            <img class="actual-tweet-image" src="images/profile-picture.jpg" alt="Perfil">
                         </div>
                         <div class="tweet-de-facto">
                             <ul class="user-info">
@@ -114,7 +119,7 @@
                     </div>
                     <div class="piu-piu">
                         <div class="tweet-image">
-                            <img src="images/profile-picture.jpg" alt="Perfil" height=60px width=60px>
+                            <img class="actual-tweet-image" src="images/profile-picture.jpg" alt="Perfil">
                         </div>
                         <div class="tweet-de-facto">
                             <ul class="user-info">
@@ -131,7 +136,7 @@
                     </div>
                     <div class="piu-piu">
                         <div class="tweet-image">
-                            <img src="images/profile-picture.jpg" alt="Perfil" height=60px width=60px>
+                            <img class="actual-tweet-image" src="images/profile-picture.jpg" alt="Perfil">
                         </div>
                         <div class="tweet-de-facto">
                             <ul class="user-info">
@@ -163,6 +168,7 @@
         <script src="js/validate-tweet.js"></script>
         <script src="js/get-tweets.js"></script>
         <script src="js/insert-tweet.js""></script>
+        <script src="js/exibe-erros.js"></script>
 
     </body>
 </html>

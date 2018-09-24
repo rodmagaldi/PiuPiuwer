@@ -9,6 +9,10 @@ xhr.addEventListener("load", function(){
         var tweets = JSON.parse(resposta);
         tweets.forEach(function(tweet){
             console.log(tweet);
+            fotoPerfilUsuario = tweet.imgUrl;
+            mensagemUsuario = tweet.message;
+            usernameUsuario = tweet.user;
+            insertTweet(mensagemUsuario, usernameUsuario, fotoPerfilUsuario);
         })
     } else {
         console.log(xhr.status)

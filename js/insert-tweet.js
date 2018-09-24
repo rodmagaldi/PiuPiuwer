@@ -2,7 +2,7 @@ var campo = document.querySelector(".piu-bar");
 var piuBox = document.querySelector(".piu-box");
 var piusBox = document.querySelector(".pius");
 
-function insertTweet(tweet){
+function insertTweet(tweet, username, foto){
     
     var novoTweetDiv = document.createElement("div");
     novoTweetDiv.classList.add("piu-piu");
@@ -14,7 +14,9 @@ function insertTweet(tweet){
     novoTweetDiv.appendChild(imagemDiv);
 
     var imagem = document.createElement("img");
+    imagem.classList.add("actual-tweet-image")
     imagemDiv.appendChild(imagem);
+    imagem.src = foto;
 
     var tweetDeFactoDiv = document.createElement("div");
     tweetDeFactoDiv.classList.add("tweet-de-facto");
@@ -28,6 +30,7 @@ function insertTweet(tweet){
     userList.appendChild(userItem);
     var user = document.createElement("h2");
     userItem.appendChild(user);
+    user.textContent = username;
 
     var usernameItem = document.createElement("li");
     userList.appendChild(usernameItem);
@@ -68,7 +71,7 @@ function insertTweet(tweet){
 
 }
 
-{/* <div class="piu-piu">
+/* <div class="piu-piu">
     <div class="tweet-image">
         <img src="images/profile-picture.jpg" alt="Perfil" height=60px width=60px>
     </div>
@@ -84,4 +87,4 @@ function insertTweet(tweet){
             <li><p class="like">Gostar</p></li>
         </ul>
     </div>
-</div> */}
+</div> */
