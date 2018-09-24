@@ -1,11 +1,13 @@
 var campo = document.querySelector(".piu-bar");
-var piuBox = document.querySelector(".piu-box")
+var piuBox = document.querySelector(".piu-box");
+var piusBox = document.querySelector(".pius");
 
 function insertTweet(tweet){
     
     var novoTweetDiv = document.createElement("div");
     novoTweetDiv.classList.add("piu-piu");
     piuBox.appendChild(novoTweetDiv);
+    piusBox.insertAdjacentElement('afterend', novoTweetDiv);
 
     var imagemDiv = document.createElement("div");
     imagemDiv.classList.add("tweet-image");
@@ -18,17 +20,17 @@ function insertTweet(tweet){
     tweetDeFactoDiv.classList.add("tweet-de-facto");
     novoTweetDiv.appendChild(tweetDeFactoDiv);
 
-    var list = document.createElement("ul");
-    lista.classList.add("user-info");
-    tweetDeFactoDiv.appendChild(list)
+    var userList = document.createElement("ul");
+    userList.classList.add("user-info");
+    tweetDeFactoDiv.appendChild(userList);
 
     var userItem = document.createElement("li");
-    list.appendChild(userItem);
+    userList.appendChild(userItem);
     var user = document.createElement("h2");
     userItem.appendChild(user);
 
     var usernameItem = document.createElement("li");
-    list.appendChild(usernameItem);
+    userList.appendChild(usernameItem);
     var username = document.createElement("p");
     username.classList.add("tweet-username");
     usernameItem.appendChild(username);
@@ -61,6 +63,8 @@ function insertTweet(tweet){
     var like = document.createElement("p");
     like.classList.add("like");    
     likeItem.appendChild(like);
+
+    campo.value = "";
 
 }
 
