@@ -237,6 +237,7 @@ span {
     justify-content: flex-start;
     padding-left: 1em;
     padding-right: 1em;
+    position: relative;
 }
 
 .piu-piu:hover {
@@ -388,4 +389,22 @@ span {
     font-weight: bold;
     margin-bottom: 1em;
     max-width: 70%;
+}
+
+.destacar {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: #FFF;
+    border: none;
+    transition: 0.5s;
+    color: #C9CED2;
+    font-weight: bold;
+    font-size: 0.7em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.destacar:hover {
+    color: #1da1f2
 }

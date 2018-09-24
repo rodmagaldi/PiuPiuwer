@@ -67,6 +67,12 @@ function insertTweet(tweet, username, foto){
     like.classList.add("like");    
     likeItem.appendChild(like);
 
+    var highlightButton = document.createElement("button");
+    novoTweetDiv.appendChild(highlightButton);
+    highlightButton.textContent = "Destacar";
+    highlightButton.classList.add("destacar");
+
+
     campo.value = "";
 
 }
