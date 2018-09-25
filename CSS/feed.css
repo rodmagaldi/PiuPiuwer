@@ -16,6 +16,7 @@ body {
     padding-top: 5px;
     height: 35px;
     background: #FFF;
+    z-index: 1;
 }
 
 .feed {
@@ -188,7 +189,7 @@ span {
     font-weight: bold;
     font-size: 1ch;
     padding-left: 1em;
-    padding-top: 1ch;
+    padding-top: 1em;
     padding-bottom: 1ch;
     display: flex;
     justify-content: space-evenly;
@@ -268,6 +269,7 @@ span {
 .user-info p {
     color: #657786;
     font-size: 0.9rem;
+    padding-left: 0.3em;
 }
 
 .user-info p:hover {
@@ -395,7 +397,7 @@ span {
     position: absolute;
     top: 2px;
     right: 2px;
-    background-color: #FFF;
+    background-color: transparent;
     border: none;
     transition: 0.5s;
     color: #C9CED2;
@@ -407,4 +409,36 @@ span {
 
 .destacar:hover {
     color: #1da1f2
+}
+
+.deletar {
+    position: absolute;
+    top: 20px;
+    right: 2px;
+    background-color: transparent;
+    border: none;
+    transition: 0.5s;
+    color: #C9CED2;
+    font-weight: bold;
+    font-size: 0.7em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.deletar:hover {
+    color: #1da1f2
+}
+
+.destacado h2{
+    color: #1da1f2;
+    transition: 0.5s;
+}
+
+.deletado {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.invisivel {
+	display: none;
 }

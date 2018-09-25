@@ -2,7 +2,7 @@ var campo = document.querySelector(".piu-bar");
 var piuBox = document.querySelector(".piu-box");
 var piusBox = document.querySelector(".pius");
 
-function insertTweet(tweet, username, foto){
+function insertTweet(tweet, usuario, foto){
     
     var novoTweetDiv = document.createElement("div");
     novoTweetDiv.classList.add("piu-piu");
@@ -29,16 +29,15 @@ function insertTweet(tweet, username, foto){
     var userItem = document.createElement("li");
     userList.appendChild(userItem);
     var user = document.createElement("h2");
+    user.textContent = usuario;
     userItem.appendChild(user);
-    user.textContent = username;
 
     var usernameItem = document.createElement("li");
     userList.appendChild(usernameItem);
     var username = document.createElement("p");
     username.classList.add("tweet-username");
+    username.textContent = "@" + usuario;
     usernameItem.appendChild(username);
-
-    // var atSpan = document.createElement("span");
 
     var message = document.createElement("p");
     message.classList.add("tweet-message");
@@ -71,26 +70,25 @@ function insertTweet(tweet, username, foto){
     novoTweetDiv.appendChild(highlightButton);
     highlightButton.textContent = "Destacar";
     highlightButton.classList.add("destacar");
+    highlightButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        piusBox.insertAdjacentElement('afterend', event.target.parentNode);
+        event.target.parentNode.classList.add("destacado");
+    });
 
+    var deleteButton = document.createElement("button");
+    novoTweetDiv.appendChild(deleteButton);
+    deleteButton.textContent = "Deletar";
+    deleteButton.classList.add("deletar");
+    deleteButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        event.target.parentNode.classList.add("deletado");
+
+        setTimeout(function() {
+            event.target.parentNode.remove();
+        }, 350);
+    });
 
     campo.value = "";
 
 }
-
-/* <div class="piu-piu">
-    <div class="tweet-image">
-        <img src="images/profile-picture.jpg" alt="Perfil" height=60px width=60px>
-    </div>
-    <div class="tweet-de-facto">
-        <ul class="user-info">
-            <li><h2>[usuário]</h2></li>
-            <li><p class="tweet-username"><span>@</span>[username]</p></li>
-        </ul>
-        <p class="tweet-message">Este é o segundo piu mostrado, ou seja, o penúltimo piu proferido. Pode conter uma frase, uma foto, talvez até a localização de quem piou.</p>
-        <ul class="action-icons">
-            <li><p class="comment">Comentar</p></li>
-            <li><p class="retweet">Repiar</p></li>
-            <li><p class="like">Gostar</p></li>
-        </ul>
-    </div>
-</div> */

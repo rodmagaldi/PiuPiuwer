@@ -2,7 +2,7 @@ var botao = document.querySelector(".novo-piu");
 var campo = document.querySelector(".piu-bar");
 var count = document.querySelector(".text-count");
 var usuario = document.querySelector(".usuario").textContent;
-var fotoPerfil = '@Url.Content("~/images/profile.picture.jpg")';
+var fotoPerfil = "images/profile-picture.jpg";
 var errors = [];
 
 campo.addEventListener("input", characterValidation);
@@ -36,6 +36,7 @@ function characterValidation(){
 botao.addEventListener("click", function(event){
     event.preventDefault();
 
+    
     //checa se esta muito comprido
     if (characterValidation() > 140) {
 
@@ -45,7 +46,7 @@ botao.addEventListener("click", function(event){
         }
 
         //coloca o erro respectivo
-        errors.push("Ops! Seu piu está muito comPIUdo!")
+        errors.push("Ops! Parece que seu piu está muito comPIUdo!")
 
         //usa a funcao que exibe os erros
         exibeErros(errors);
@@ -55,10 +56,10 @@ botao.addEventListener("click", function(event){
         while (errors.length != 0) {
             errors.pop();
         }
-        errors.push("Ops! Seu piu deve ter algum conteúdo piável!")
+        errors.push("Ops! Seu piu deve conter algum conteúdo piável!")
         
         exibeErros(errors);
-        
+
     //publica caso nao haja nenhum erro
     } else {
 
